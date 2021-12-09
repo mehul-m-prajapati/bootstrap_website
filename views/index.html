@@ -4,11 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        [class *= "col"] {
+            padding: 1rem;
+            background-color: #33b5e5;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        .child {
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello</h1>
+
+    <div class="container border">content
+        <div class="row">
+            <div class="col-md-6 col-lg-8">Col 1</div>
+            <div class="col-md-6 col-lg-4">Col 2</div>
+        </div>
+    </div>
+
+    <div class="container border">
+        <div class="row align-items-start" style="height: 100px;">
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-2">1</div>
+            <div class="col-2">2</div>
+        </div>
+    </div>
+
+    <h2 class="text-center my-5">Gutter</h2>
+    <div class="container">
+        <div class="row gx-1">
+            <div class="col-6"><div class="child">1</div></div>
+            <div class="col-6"><div class="child">2</div></div>
+            <div class="col-6"><div class="child">3</div></div>
+            <div class="col-6"><div class="child">4</div></div>
+        </div>
+    </div>
+
+    <a href="/button">Buttons</a>
 
     <script src="js/bootstrap.bundle.js"></script>
 </body>
