@@ -14,6 +14,9 @@ app.get('/button', (req, res) => {
     res.sendFile(path.join(__dirname + "/views", '/button.html'));
 });
 
+app.get('/sample', (req, res) => {
+    res.sendFile(path.join(__dirname + "/views", '/sample.html'));
+});
 
 app.listen(port, () => {
     console.log(`Listening on port:${port}`)
