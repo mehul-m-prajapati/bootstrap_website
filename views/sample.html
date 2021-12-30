@@ -21,10 +21,23 @@
 
         <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
 
+        <button id='clickBtn'>Click me</button>
 
         <script>
             const heading = document.querySelector('h1');
             heading.innerText = "Hello JS";
+
+            function setUserName() {
+                let name = prompt('Enter your name');
+                if (!name)
+                    setUserName();
+                heading.textContent = 'I am cool: ' + name;
+            }
+
+            let btn = document.querySelector('#clickBtn');
+            btn.onclick = () => {
+                setUserName();
+            }
         </script>
 
     </body>
