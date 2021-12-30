@@ -22,6 +22,10 @@ app.get('/cards', (req, res) => {
     res.sendFile(path.join(__dirname + "/views", '/card.html'));
 });
 
+app.get('/typography', (req, res) => {
+    res.sendFile(path.join(__dirname + "/views", '/typog.html'));
+});
+
 app.listen(port, () => {
     console.log(`Listening on port:${port}`)
 });
