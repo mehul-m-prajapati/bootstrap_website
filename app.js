@@ -26,6 +26,10 @@ app.get('/typography', (req, res) => {
     res.sendFile(path.join(__dirname + "/views", '/typog.html'));
 });
 
+app.get('/bootimages', (req, res) => {
+    res.sendFile(path.join(__dirname + "/views", '/bootimages.html'));
+});
+
 app.listen(port, () => {
     console.log(`Listening on port:${port}`)
 });
