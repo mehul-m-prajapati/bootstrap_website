@@ -30,6 +30,10 @@ app.get('/bootimages', (req, res) => {
     res.sendFile(path.join(__dirname + "/views", '/bootimages.html'));
 });
 
+app.get('/utilities', (req, res) => {
+    res.sendFile(path.join(__dirname + "/views", '/utilities.html'));
+});
+
 app.listen(port, () => {
     console.log(`Listening on port:${port}`)
 });
