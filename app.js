@@ -46,6 +46,10 @@ app.get('/forms', (req, res) => {
     res.sendFile(path.join(__dirname + "/views", '/forms.html'));
 });
 
+app.get('/fullpage', (req, res) => {
+    res.sendFile(path.join(__dirname + "/views", '/fullpage.html'));
+});
+
 app.listen(port, () => {
     console.log(`Listening on port:${port}`)
 });
