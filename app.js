@@ -34,6 +34,18 @@ app.get('/utilities', (req, res) => {
     res.sendFile(path.join(__dirname + "/views", '/utilities.html'));
 });
 
+app.get('/alerts', (req, res) => {
+    res.sendFile(path.join(__dirname + "/views", '/alerts.html'));
+});
+
+app.get('/navbar', (req, res) => {
+    res.sendFile(path.join(__dirname + "/views", '/navbar.html'));
+});
+
+app.get('/forms', (req, res) => {
+    res.sendFile(path.join(__dirname + "/views", '/forms.html'));
+});
+
 app.listen(port, () => {
     console.log(`Listening on port:${port}`)
 });
